@@ -1,0 +1,508 @@
+나라,country
+사람,person
+말,language
+한국,Korea
+한국 사람,Korean
+미국,America
+미국 사람,American
+영국,Britain
+영국 사람,British
+일본,Japan
+일본 사람,Japanese
+중국,China
+중국 사람,Chinese
+프랑스,France
+프랑스 사람,French
+호주,Australia
+호주 사람,Australian
+캐나다,Canada
+캐나다 사람,Canadian
+안녕하세요,hello
+만나서 반가워요,nice to meet you
+안녕히 계세요,goodbye (when the listener is staying)
+안녕히 가세요,goodbye (when the listeners is leaving)
+학생,student
+대학생,college student
+일,1
+일학년,freshman
+이,2
+이학년,sophomore
+삼,3
+삼학년,junior
+사,4
+사학년,senior
+저,me (humble)
+~씨,Mr./Mrs./Miss
+예,yes
+네,yes
+C 은,topic particle ('as for')
+V 는,topic particle ('as for')
+~이다,to be (equation)
+C 이에요,to be (equation)
+V 예요,to be (equation)
+어느,which
+여러분,everyone
+직업,occupation, job
+가수,singer
+군인,military personnel
+기자,reporter
+선생님,teacher
+요리사,cook
+의사,doctor
+회사원,company employee
+주부,housewife
+명함,name card
+이름,name
+한국말(한국어),Korean language
+전화번호,telephone number
+C-이,subject particle (with 받침)
+V-가,subject particle (without 받침)
+~도,inclusive particle (also, too)
+~만,exclusive particle (only)
+무엇(뭐),what
+뭐예요?,what is it?
+이름이 뭐예요?,what is your name?
+직업이 뭐예요?,what is your occupation?
+아니다,to not be (negative equation)
+아니요,to not be (negative equation)
+아닙니다,to not be (negative equation)
+그렇다,to be so/ is that right?
+그래요,to be so/ is that right?
+만나서 반갑습니다,nice to meet you (formal)
+안녕하십니까,hello (formal)
+가방,bag
+공책,notebook
+볼펜,ballpoint pen
+연필,pencil
+의자,chair
+지우개,eraser
+책,book
+책상,desk
+모자,hat
+사전,dictionary
+시계,watch/clock
+신문,newspaper
+안경,glasses
+우산,umbrella
+카메라,camera
+휴대폰,cellular phone
+동전,coin
+차,car
+자,ruler
+창문,window
+문,door
+지도,map
+필통,pencil case
+잡지,magazine
+지갑,wallet
+전자사전,electronic dictionary
+룸메이트,roommate
+친구,friend
+남자 친구,boyfriend
+여자 친구,girlfriend
+이 N,this N
+이거,this item
+그 N,that N
+그거,that item
+저 N,that N over there
+저거,that item over there
+뭐(무엇),what
+이거는 뭐예요?,what is this?
+있다,to have
+있어요,possession, to be
+없다 (없어요),to not have
+사과,apple
+오렌지,orange
+바나나,banana
+딸기,strawberry
+우유,milk
+커피,coffee
+콜라,cola
+쥬스,juice
+물,water
+휴지,tissue
+교통카드,transportation card
+냉장고,refrigerator
+에어컨,air conditioner
+방,room
+교실,classroom
+영화,movie
+텔레비전,television
+컴퓨터,computer
+여기 있어요,here you are
+어서 오세요,come in
+좀,please
+N 주세요,give me N
+제,my
+내,my
+우리,we
+-하고,particle 'and'
+와,particle 'and'
+과,particle 'and'
+피자,pizza
+사다 (사요),to buy
+보다 (봐요),to see/to watch
+만나다 (만나요),to meet
+배우다 (배워요),to learn
+먹다 (먹어요),to eat
+마시다 (마셔요),to drink
+읽다 (읽어요),to read
+쉬다 (쉬어요),to take a rest
+하다 (해요),to do
+공부,academic work
+일,work
+운동,exercise
+아르바이트하다,to work part-time
+요리,cooking
+숙제,homework
+지금,now
+오늘,today
+그리고,and
+시장,market
+요리하다,to cook
+숙제하다,to do homework
+일하다,to work
+운동하다,to exercise
+공부하다,to study
+태권도,taekwondo
+옷,clothes
+한국어,Korean
+일본어,Japanese
+도서관,library
+집,home/house
+백화점,department store
+공원,park
+커피숍,coffee shop
+극장,theater
+학교,school
+식당,restaurant
+회사,company
+C -을,object particle (with 받침)
+~어요/아요,polite ending (informal)
+V -를,object particle (without 받침)
+가르치다,to teach
+차,tea
+불고기,barbequed beef
+프랑스어,French
+드라마,TV drama
+스포츠 센터,sports center
+노래방,Korean singing room
+책방 (서점),bookstore
+찜질방,Korean sauna
+PC 방,Korean game room
+빨래방,coin laundry
+*좋다 (좋아요),to be good
+안 + verb,do not + Verb
+*못 + verb,cannot + Verb
+어디,where
+~에서,in, at, location particle
+그럼,then
+*어떻다 (어때요),to be how
+*재미있다 (재미있어요),to be fun
+*맛있다 (맛있어요),to be delicious
+*괜찮다 (괜찮아요),to be okay
+*싸다 (싸요),to be cheap
+*비싸다 (비싸요),to be expensive
+공항,airport
+서울,Seoul
+우체국,post office
+시내,downtown
+대사관,embassy
+인사동,Insadong: a district in Seoul
+은행,bank
+남산,Namsan: a mountain in Seoul
+가게,store
+서울타워,Seoul Tower
+약국,pharmacy
+명동,Myungdong: a district in Seoul
+병원,hospital
+미용실,hair salon
+찻집,teahouse
+~에,in, at, locative particle +있다/없다
+교실,classroom
+연극,theater play
+~에,to, goal particle +가다/오다
+~에서,in, at, locative particle + verb
+구경하다,to sightsee/to look around
+쇼핑하다,to shop
+기숙사,dormitory
+앞,front
+서점,bookstore
+뒤,back/behind
+빵집,bakery
+옆,side/next
+화장실,restroom
+안,in/inside
+사진,photo
+아래,under
+아버지,father
+밑,bottom/below
+어머니,mother
+위,top/above/on
+반,class
+한국어 반,Korean class
+매일,every day
+*왜,why?
+알다,to know
+잘 지내다 (잘 지내요),to be doing well
+그 + N,that + N
+사랑하다,to love
+거기,there/that place
+*여기,here/this place
+Vb -(으)러 가다/오다,to go/come in order to Vb
+*저기,over there in sight
+생일,birthday
+며칠,what date
+월요일,Monday
+시험,test, exam
+언제,when
+화요일,Tuesday
+주말,weekend
+무슨,what/what kind of
+수요일,Wednesday
+크리스마스,Christmas
+목요일,Thursday
+파티,party
+~하고,with (someone)
+금요일,Friday
+시간,time
+~에,on, at, time particle
+토요일,Saturday
+약속,appointment
+일요일,Sunday
+미안하다,to be sorry
+~월,(month)
+유월*,June
+같이,together
+~일,(day)
+시월*,October
+일기,journal/diary
+지난,last, past + time
+카드,card
+이번,this + time
+선물,gift
+다음,next
+세수하다,to wash one's face
+거기,there
+이를 닦다,to brush one's teeth
+여기,here
+산책하다,to stroll
+사진(을) 찍다,to take a photo
+~었/았어요,past tense, polite style
+끝나다,to be finished
+그래서,so/therefore
+오늘,today
+~고,clausal connective
+어제,yesterday (to connect two events)
+내일,tomorrow
+*~어서/아서,clausal connective
+혼자,alone (for sequential events)
+누구,who
+1,일
+2,이
+3,삼
+4,사
+5,오
+6,육
+7,칠
+8,팔
+9,구
+10,십
+11,십일
+12,십이
+13,십삼
+14,십사
+15,십오
+16,십육 [심뉵]
+17,십칠
+18,십팔
+19,십구
+20,이십
+30,삼십
+40,사십
+50,오십
+60,육십
+70,칠십
+80,팔십
+90,구십
+100,백
+1,000,천
+10,000,만
+갈비탕,beef-rib soup
+김밥,seaweed-wrapped roll
+김치,kimchi
+김치찌개,kimchi stew
+냉면,cold chewy noodle
+라면,instant noodle/ramen
+불고기,bulgogi
+비빔밥,bibimbap
+아침,breakfast
+아침,morning
+점심,lunch
+점심,daytime
+저녁,dinner
+저녁,evening
+노래,song
+길,road
+아저씨,middle-aged man
+귤,tangerine
+딸기,strawberry
+사과,apple
+수박,watermelon
+빵,bread
+맥주,beer
+몇,how many
+얼마,how much
+모두,all
+또,again
+많이,a lot
+앉다,to sit down
+주다,to give
+기다리다,to wait
+좋아하다,to like
+싫어하다,to dislike
+팔다,to sell
+사다,to buy
+전화하다,to call
+나쁘다,to be bad
+복잡하다,to be crowded
+잠깐만,for a moment
+그래요?,really?
+여기요,excuse me!
+새벽,dawn
+낮,daytime
+밤,night
+시험,test
+보통,usually
+쯤,about
+운전하다,to drive
+일어나다,to give up
+청소하다,to clean
+시험하다,to take a test
+세수하다,to wash one's face
+회의하다,to hold a meeting
+기다리다,to wait
+타다,to ride
+타다,take (a bus)
+빨래하다,to do the laundry
+샤워하다,to take a shower
+~부터,from (time)
+~까지,to (time)
+맑다,to be clear
+흐리다,to be cloudy
+흐려요,to be cloudy
+덥다,to be hot
+더워요,to be hot
+춥다,to be cold
+추워요,to be cold
+따뜻하다,to be warm
+시원하다,to be refreshing
+비가 오다,to rain
+비가 와요,to rain
+눈이 오다,to snow
+이야기 하다,to talk
+가볍다,to be light
+가벼워요,to be light
+무겁다,to be heavy
+무거워요,to be heavy
+쉽다,to be easy
+쉬워요,to be easy
+어렵다,to be difficult
+어려워요,to be difficult
+맵다,to be spicy
+매워요,to be spicy
+봄,spring
+여름,summer
+가을,autumn
+겨울,winter
+날씨,weather
+동생,younger brother
+쉬는 시간,break time
+요즘,these days
+어때요?,how is it?
+어떻다,to be how
+하지만,but
+~지만,contrastive clausal connective Vb/Adj + but
+~(스)ㅂ니다,Formal polite style
+고향,hometown
+스키장,ski resort
+단풍,autumn foliage
+수영장,swimming pool
+꽃,flower
+바다,sea
+바닷가,beach
+생선,fish
+하늘,sky
+눈사람,snowman
+수영하다,to swim
+만들다,to make
+구경하다,to look around
+구경하다,to sightsee
+항상,always
+처음,for the first time
+작년,last year
+내년,next year
+이번,this (summer, vacation, semester)
+지난,last (birthday ..)
+다음,next (winter..)
+~어서,casual clausal connective Vb + therefore
+~아서,casual clausal connective Adj + therefore
+게임을 하다,to play a game
+골프를 치다,to play golf
+기타를 치다,to play the guitar
+농구를 하다,to play basketball
+당구를 치다,to play billiards
+스케이트를 타다,to skate
+스키를 타다,to ski
+자전거를 타다,to ride a bicycle
+축구를 하다,to play soccer
+테니스를 치다,to play tennis
+피아노를 치다,to play the piano
+낮잠을 자다,to take a nap
+노래방에 가다,to go to a karaoke
+등산(을) 하다,to climb a mountain
+산책(을) 하다,to stroll
+여행(을) 하다,to travel
+여행(을) 가다,to go travel
+듣다,to listen
+걷다,to walk
+걸어서 가다,to go on foot
+타다,to ride
+음악,music
+뉴스,news
+라디오,radio
+버스,bus
+생활,life
+관악산,a mountain in Seoul
+시청,city hall
+한강,the Hangang
+심심하다,to be bored
+가깝다,to be close
+멀다,to be far away
+어떻게,how
+요즘,these days
+잘,well
+조금,a little
+그런데,by the way
+소개하다,to introduce
+많다,to be a lot
+적다,to be a little
+피곤하다,to be tired
+크다,to be big
+작다,to be small
+식혜,sweet rice drink
+수정과,sweet cinnamon drink
+운동장,athletic field
+클럽,club
+미팅,blind date with a group of friends
+수업,class
+오전,morning
+오후,afternoon
+저녁,evening
+밤,night
+자주,often
+가끔,once in a while
+정말,really
+보통,usually
+지금,now
+그래요,okay
