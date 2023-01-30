@@ -32,6 +32,12 @@ class FlashCardScreen(QtWidgets.QWidget):
 
         self.setLayout(layout)
 
+    def Reset(self):
+        self.alert = QtWidgets.QMessageBox()
+        ResetWeights()
+        self.alert.setText('Weights have been reset')
+        self.alert.exec()
+
     def CheckAnswer(self):
         self.alert = QtWidgets.QMessageBox()
         fixedUserAnswer=self.userTextBoxAnswer.text().lower().encode('utf-8')
@@ -44,6 +50,7 @@ class FlashCardScreen(QtWidgets.QWidget):
         else:
             self.alert.setText('Incorrect! the answer was: ' + stringedActualAnswer)
             correctAnswerDict[self.label.text()]=(1.1)*float(correctAnswerDict[self.label.text()])
+        print(correctAnswerDict[self.label.text()])
         UpdateCorrectAnswers(correctAnswerDict)
 
         self.alert.exec()
