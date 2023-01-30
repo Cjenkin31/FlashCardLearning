@@ -11,5 +11,5 @@ def RePickle():
     for card in listOfCards:
         wholeCard = card[:-1].split(",")
         termsDefin[wholeCard[0]] = wholeCard[1]
-    pickle.dump(termsDefin, open("dict.pickle", "wb"))
+    pickle.dump(termsDefin, open("pickle/dict.pickle", "wb"))
     return(termsDefin)
