@@ -33,7 +33,5 @@ class FlashCardScreen(QtWidgets.QWidget):
             self.alert.setText('Correct!')
         else:
             self.alert.setText('Incorrect! the answer was: ' + stringedActualAnswer)
-            print(fixedUserAnswer)
-            print(fixedActualAnswer)
         self.alert.exec()
         self.switch_window.emit()
