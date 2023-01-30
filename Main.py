@@ -5,6 +5,8 @@ def main():
     app = QtWidgets.QApplication(sys.argv)
     app.setStyle('Fusion')
     app.setStyleSheet("QPushButton { margin: 10ex; }")
+    app.setStyleSheet("QLabel{font-size: 18pt;}")
+
     controller = Controller()
     controller.show_main()
     sys.exit(app.exec_())
