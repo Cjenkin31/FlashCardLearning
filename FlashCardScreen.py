@@ -14,7 +14,6 @@ class FlashCardScreen(QtWidgets.QWidget):
         listOfWeights = list(correctAnswerDict.values())
 
         layout = QtWidgets.QGridLayout()
-        # quizzedWord = random.choice(list(TermDefDict().keys()))
         quizzedWord = random.choices(list(TermDefDict().keys()),weights=listOfWeights,k=1)
         self.label = QtWidgets.QLabel(quizzedWord[0])
         layout.addWidget(self.label)
