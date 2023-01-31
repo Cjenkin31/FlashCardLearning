@@ -1,9 +1,13 @@
 import sys
+from PyQt5.QtGui import QKeySequence
+from PyQt5.QtWidgets import QShortcut
 from PyQt5 import QtCore, QtWidgets
 from FlashCardReader import *
 from correctIncorrect import *
 import random
 from CorrectAnswerMaker import *
+import keyboard as kb
+
 class FlashCardScreen(QtWidgets.QWidget):
     switch_window = QtCore.pyqtSignal(str,str,str)
     def __init__(self):
@@ -28,7 +32,10 @@ class FlashCardScreen(QtWidgets.QWidget):
         self.resetWeightsButton = QtWidgets.QPushButton('Reset Weights')
         self.resetWeightsButton.clicked.connect(self.Reset)
         layout.addWidget(self.resetWeightsButton)
-
+        self.shortCutlabel = QtWidgets.QLabel("Ctrl+O to quickly enter")
+        layout.addWidget(self.shortCutlabel)
+        self.shortcut_open = QShortcut(QKeySequence('Ctrl+O'), self)
+        self.shortcut_open.activated.connect(self.CheckAnswer)
         self.setLayout(layout)
 
     def Reset(self):

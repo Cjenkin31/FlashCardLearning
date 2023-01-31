@@ -1,11 +1,14 @@
 from PyQt5 import QtCore, QtWidgets
 from FlashCardReader import *
 from correctIncorrect import *
+from PyQt5.QtGui import QKeySequence
+from PyQt5.QtWidgets import QShortcut
 from CorrectAnswerMaker import *
+import keyboard as kb
 class AnswerScreen(QtWidgets.QWidget):
     switch_window = QtCore.pyqtSignal()
     def __init__(self, text, correctAnswer,definition):
-        
+
         QtWidgets.QWidget.__init__(self)
         self.setWindowTitle('Answer Screen')
         layout = QtWidgets.QGridLayout()
@@ -29,6 +32,13 @@ class AnswerScreen(QtWidgets.QWidget):
         self.nextCardButton = QtWidgets.QPushButton('Next Card')
         self.nextCardButton.clicked.connect(self.NextCard)
         layout.addWidget(self.nextCardButton)
+
+        self.shortCutlabel = QtWidgets.QLabel("Ctrl+I I was Correct!, Ctrl+O next card")
+        layout.addWidget(self.shortCutlabel)
+        self.shortcut_open = QShortcut(QKeySequence('Ctrl+O'), self)
+        self.shortcut_open.activated.connect(self.NextCard)
+        self.shortcut_openI = QShortcut(QKeySequence('Ctrl+I'), self)
+        self.shortcut_openI.activated.connect(self.UserCorrect)
 
         self.setLayout(layout)
 
