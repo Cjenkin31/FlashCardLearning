@@ -1,6 +1,7 @@
 import sys
 from PyQt5 import QtCore, QtWidgets
 from FlashCardScreen import *
+from AnswerScreen import *
 
 class MainWindow(QtWidgets.QWidget):
 
@@ -32,6 +33,15 @@ class Controller:
     
     def showFlashCardScreen(self):
         self.flashCardScreen = FlashCardScreen()
-        self.window.close()
-        self.flashCardScreen.switch_window.connect(self.showFlashCardScreen)
+        try:
+            self.answerScreen.close()
+        except:
+            self.window.close()
+        self.flashCardScreen.switch_window.connect(self.showAnswerScreen)
         self.flashCardScreen.show()
+
+    def showAnswerScreen(self, text,correctAnswer,definition):
+        self.answerScreen = AnswerScreen(text,correctAnswer,definition)
+        self.flashCardScreen.close()
+        self.answerScreen.switch_window.connect(self.showFlashCardScreen)
+        self.answerScreen.show()

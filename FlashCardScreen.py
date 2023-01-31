@@ -5,7 +5,7 @@ from correctIncorrect import *
 import random
 from CorrectAnswerMaker import *
 class FlashCardScreen(QtWidgets.QWidget):
-    switch_window = QtCore.pyqtSignal()
+    switch_window = QtCore.pyqtSignal(str,str,str)
     def __init__(self):
         
         QtWidgets.QWidget.__init__(self)
@@ -25,9 +25,9 @@ class FlashCardScreen(QtWidgets.QWidget):
         self.submitAnswerButton.clicked.connect(self.CheckAnswer)
         layout.addWidget(self.submitAnswerButton)
 
-        self.submitAnswerButton = QtWidgets.QPushButton('Reset Weights')
-        self.submitAnswerButton.clicked.connect(self.Reset)
-        layout.addWidget(self.submitAnswerButton)
+        self.resetWeightsButton = QtWidgets.QPushButton('Reset Weights')
+        self.resetWeightsButton.clicked.connect(self.Reset)
+        layout.addWidget(self.resetWeightsButton)
 
         self.setLayout(layout)
 
@@ -38,19 +38,4 @@ class FlashCardScreen(QtWidgets.QWidget):
         self.alert.exec()
 
     def CheckAnswer(self):
-        self.alert = QtWidgets.QMessageBox()
-        fixedUserAnswer=self.userTextBoxAnswer.text().lower().encode('utf-8')
-        fixedActualAnswer=TermDefDict()[self.label.text()].lower().encode('utf-8')
-        stringedActualAnswer = str(fixedActualAnswer)[2:-1]
-        correctAnswerDict = ReadCorrectAnswers()
-        if (fixedUserAnswer == fixedActualAnswer):
-            self.alert.setText('Correct!')
-            correctAnswerDict[self.label.text()]=(.9)*float(correctAnswerDict[self.label.text()]) 
-        else:
-            self.alert.setText('Incorrect! the answer was: ' + stringedActualAnswer)
-            correctAnswerDict[self.label.text()]=(1.1)*float(correctAnswerDict[self.label.text()])
-        print(correctAnswerDict[self.label.text()])
-        UpdateCorrectAnswers(correctAnswerDict)
-
-        self.alert.exec()
-        self.switch_window.emit()
+        self.switch_window.emit(self.userTextBoxAnswer.text().lower(),TermDefDict()[self.label.text()].lower(),self.label.text())
