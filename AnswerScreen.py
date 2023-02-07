@@ -4,7 +4,7 @@ from correctIncorrect import *
 from PyQt5.QtGui import QKeySequence
 from PyQt5.QtWidgets import QShortcut
 from CorrectAnswerMaker import *
-import keyboard as kb
+from WordTracker import *
 class AnswerScreen(QtWidgets.QWidget):
     switch_window = QtCore.pyqtSignal()
     def __init__(self, text, correctAnswer,definition):
@@ -13,13 +13,11 @@ class AnswerScreen(QtWidgets.QWidget):
         self.setWindowTitle('Answer Screen')
         layout = QtWidgets.QGridLayout()
         weights = ReadCorrectAnswers()
-        print(weights)
         if (text.encode('UTF-8') == correctAnswer.encode('UTF-8')):
             self.label = QtWidgets.QLabel("Correct!")
             weights[definition]=weights[definition]*0.9
         else:
             self.label = QtWidgets.QLabel("Incorrect! the correct answer is: " + str(correctAnswer))
-        print(weights[definition])
         layout.addWidget(self.label)
         
         self.correctLabelDef = QtWidgets.QLabel(definition)
@@ -46,12 +44,16 @@ class AnswerScreen(QtWidgets.QWidget):
         weights = ReadCorrectAnswers()
         if (self.label.text() == "Correct!"):
             weights[self.correctLabelDef.text()]=weights[self.correctLabelDef.text()]*.9
+            AddCorrect(self.correctLabelDef.text())
         else:
             weights[self.correctLabelDef.text()]=weights[self.correctLabelDef.text()]*1.1
+            SubtractCorrect(self.correctLabelDef.text())
         UpdateCorrectAnswers(weights)
         self.switch_window.emit()
     def UserCorrect(self):
         weights = ReadCorrectAnswers()
         weights[self.correctLabelDef.text()]=weights[self.correctLabelDef.text()]*.9
         UpdateCorrectAnswers(weights)
+        print(self.correctLabelDef.text())
+        AddCorrect(self.correctLabelDef.text())
         self.switch_window.emit()

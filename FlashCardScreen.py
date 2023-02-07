@@ -7,6 +7,7 @@ from correctIncorrect import *
 import random
 from CorrectAnswerMaker import *
 import keyboard as kb
+from WordTracker import GetTenWords
 
 class FlashCardScreen(QtWidgets.QWidget):
     switch_window = QtCore.pyqtSignal(str,str,str)
@@ -14,12 +15,11 @@ class FlashCardScreen(QtWidgets.QWidget):
         
         QtWidgets.QWidget.__init__(self)
         self.setWindowTitle('Flash Cards')
-        correctAnswerDict = ReadCorrectAnswers()
-        listOfWeights = list(correctAnswerDict.values())
 
         layout = QtWidgets.QGridLayout()
-        quizzedWord = random.choices(list(TermDefDict().keys()),weights=listOfWeights,k=1)
-        self.label = QtWidgets.QLabel(quizzedWord[0])
+        quizzedWords = GetTenWords()
+        print(quizzedWords)
+        self.label = QtWidgets.QLabel(random.choice(quizzedWords))
         layout.addWidget(self.label)
 
         self.userTextBoxAnswer = QtWidgets.QLineEdit()

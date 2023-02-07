@@ -1,6 +1,4 @@
 import pickle
-import bz2
-import os
 
 def IncorrectList():
     try:
@@ -14,10 +12,10 @@ def IncorrectList():
 
 def CorrectList():
     try:
-        correctWords = pickle.load(open("pickle/correct.pickle", "rb"))
+        correctWords = pickle.load(open("pickle\correct.pickle", "rb"))
         if (correctWords.count < 1):
             raise Exception("no correct words found")
     except (OSError, IOError) as e:
-        pickle.dump(correctWords, open("pickle/correct.pickle", "wb"))
+        pickle.dump(correctWords, open("pickle\correct.pickle", "wb"))
         return []
     return( correctWords )
