@@ -4,7 +4,7 @@ import codecs
 def TermDefDict():
     termsDefin = {}
     try:
-        return pickle.load(open("pickle\dict.pickle", "rb"))
+        return pickle.load(open("pickle/dict.pickle", "rb"))
     except (OSError, IOError) as e:
         print("__________________")
         print("__________________")
@@ -17,6 +17,10 @@ def TermDefDict():
                 print((line[:-1])[2:-1])
                 x = line[:-1].encode('utf-8')[2:-1]
                 print(x)
-                termsDefin[x.split(',')[0]] = x.split(',')[1]
+                print(x)
+                print(x)
+                print(x)
+                test = x.split(',')[1]
+                termsDefin[x.split(',')[0]] = test
         pickle.dump(termsDefin, open("pickle\dict.pickle", "wb"))
         return termsDefin

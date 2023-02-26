@@ -19,7 +19,9 @@ class FlashCardScreen(QtWidgets.QWidget):
         layout = QtWidgets.QGridLayout()
         quizzedWords = GetTenWords()
         print(quizzedWords)
-        self.label = QtWidgets.QLabel(random.choice(quizzedWords))
+        quizzedWord = random.choice(quizzedWords)
+        print(quizzedWord)
+        self.label = QtWidgets.QLabel(str(quizzedWord))
         layout.addWidget(self.label)
 
         self.userTextBoxAnswer = QtWidgets.QLineEdit()
